@@ -1,10 +1,8 @@
 export default function HeroSection() {
   return (
     <section className="relative pt-36 pb-20 px-6 md:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16 min-h-screen">
-      {/* Ambient glow */}
       <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] -z-10 pointer-events-none" />
 
-      {/* Left: Text */}
       <div className="lg:w-1/2 flex flex-col items-start z-10">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/20 mb-8">
           <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -25,17 +23,22 @@ export default function HeroSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-          <button className="bg-gradient-to-br from-primary to-primary-dim text-on-primary font-bold px-8 py-4 rounded-full hover:scale-95 transition-transform duration-300 glow-hover text-base tracking-tight flex items-center justify-center gap-2">
+          <a
+            href="#basvuru"
+            className="bg-gradient-to-br from-primary to-primary-dim text-on-primary font-bold px-8 py-4 rounded-full hover:scale-95 transition-transform duration-300 glow-hover text-base tracking-tight flex items-center justify-center gap-2"
+          >
             Başvurunu Yap
             <span className="material-symbols-outlined icon-filled text-[20px]">arrow_forward</span>
-          </button>
-          <button className="px-8 py-4 rounded-full border border-outline-variant/15 text-on-surface font-semibold hover:bg-surface-container-high transition-colors duration-300 flex items-center justify-center gap-2">
+          </a>
+          <a
+            href="#bootcamps"
+            className="px-8 py-4 rounded-full border border-outline-variant/15 text-on-surface font-semibold hover:bg-surface-container-high transition-colors duration-300 flex items-center justify-center gap-2"
+          >
             <span className="material-symbols-outlined text-[20px]">play_circle</span>
             Programları İncele
-          </button>
+          </a>
         </div>
 
-        {/* Inline stats */}
         <div className="flex items-center gap-8 mt-12">
           {[
             { value: '%92', label: 'İşe Yerleşme' },
@@ -50,7 +53,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Right: Image */}
       <div className="lg:w-1/2 relative w-full aspect-square max-w-[560px] z-10">
         <div className="absolute inset-0 bg-gradient-to-tr from-surface to-transparent z-10 pointer-events-none rounded-3xl" />
         <img
@@ -58,8 +60,6 @@ export default function HeroSection() {
           alt="Modern teknoloji eğitim ortamı"
           className="w-full h-full object-cover rounded-3xl opacity-80 mix-blend-luminosity border border-outline-variant/10"
         />
-
-        {/* Floating card */}
         <div className="absolute -bottom-6 -left-6 md:-bottom-8 md:-left-8 bg-surface-container-highest/80 backdrop-blur-xl p-5 md:p-6 rounded-2xl border border-outline-variant/15 shadow-[0_8px_32px_rgba(0,0,0,0.4)] z-20">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center shrink-0">

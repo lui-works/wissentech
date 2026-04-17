@@ -96,9 +96,10 @@ export default function BootcampGrid() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {bootcamps.map((camp) => (
-          <div
+          <a
             key={camp.title}
-            className="group bg-surface-container-low rounded-xl p-8 hover:bg-surface-container-highest transition-colors duration-300 border border-transparent hover:border-outline-variant/15 flex flex-col h-full cursor-pointer"
+            href="#basvuru"
+            className="group bg-surface-container-low rounded-xl p-8 hover:bg-surface-container-highest transition-colors duration-300 border border-transparent hover:border-outline-variant/15 flex flex-col h-full"
           >
             <div
               className={`w-14 h-14 rounded-lg bg-surface-container flex items-center justify-center mb-8 border border-outline-variant/10 ${camp.borderHoverClass} transition-colors`}
@@ -113,13 +114,13 @@ export default function BootcampGrid() {
 
             <div className="flex items-center justify-between pt-6 border-t border-outline-variant/10">
               <span className={`text-sm font-medium ${camp.textClass}`}>{camp.duration}</span>
-              <button
+              <div
                 className={`w-10 h-10 rounded-full bg-surface-container flex items-center justify-center ${camp.bgHoverClass} group-hover:text-on-primary transition-all duration-300`}
               >
                 <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-              </button>
+              </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>

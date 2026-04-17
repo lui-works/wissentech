@@ -11,11 +11,19 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <HeroSection />
+        <section id="hero">
+          <HeroSection />
+        </section>
         <TrustedBy />
-        <BootcampGrid />
-        <SuccessStories />
-        <CTA />
+        <section id="bootcamps">
+          <BootcampGrid />
+        </section>
+        <section id="basari-hikayeleri">
+          <SuccessStories />
+        </section>
+        <section id="basvuru">
+          <CTA />
+        </section>
       </main>
       <Footer />
     </>

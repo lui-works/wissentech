@@ -30,14 +30,16 @@ export default function SuccessStories() {
               kariyerlerini yeniden şekillendiriyor.
             </p>
           </div>
-          <button className="shrink-0 px-6 py-3 rounded-full border border-outline-variant/15 text-white font-medium hover:bg-surface-container transition-colors flex items-center gap-2 text-sm">
-            Tüm Hikayeler
+          <a
+            href="#basvuru"
+            className="shrink-0 px-6 py-3 rounded-full border border-outline-variant/15 text-white font-medium hover:bg-surface-container transition-colors flex items-center gap-2 text-sm"
+          >
+            Sen de Katıl
             <span className="material-symbols-outlined text-[18px]">arrow_right_alt</span>
-          </button>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-          {/* Featured story */}
           <div className="relative rounded-2xl overflow-hidden group h-[460px] md:h-[500px]">
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDup9P9DpkfxYCjV7c6ibM3J9UWeGhmWdkxwMZDCD2RdrvX9yyoDA0FLHYuh8q2MiGq-7VbPH6Gc-0w1lNdUsV-eRvmE3mdcVkEqX1OhuG6A0oeyMnA_P5Vz3PY9hcoqiLcdJH0sY37SWn4ickz1xBKGKbZnPtpUQxj8h8r1NO93VMaU3nHwPtKP1eamW6ec1QjWcgEhYanPiDj7aSEiVIqBcwU2WFtmS5znddv6EiPCwlQSgj7B1QsRMoXQEvxd4rTA5EKwGaolzYj"
@@ -46,9 +48,12 @@ export default function SuccessStories() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
             <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-10 z-10">
-              <div className="w-14 h-14 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20 mb-6 cursor-pointer hover:bg-primary/20 transition-colors">
+              <a
+                href="#basvuru"
+                className="w-14 h-14 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20 mb-6 cursor-pointer hover:bg-primary/20 transition-colors"
+              >
                 <span className="material-symbols-outlined icon-filled text-white text-[28px]">play_arrow</span>
-              </div>
+              </a>
               <h3 className="text-2xl font-headline font-bold text-white mb-1">Ayşe Yılmaz</h3>
               <p className="text-primary font-medium mb-3 text-sm">Senior Frontend Developer @ TechCorp</p>
               <p className="text-on-surface-variant/90 max-w-md text-sm leading-relaxed line-clamp-2">
@@ -58,11 +63,11 @@ export default function SuccessStories() {
             </div>
           </div>
 
-          {/* Secondary stories */}
           <div className="flex flex-col gap-6 md:gap-8">
             {secondary.map((story) => (
-              <div
+              <a
                 key={story.name}
+                href="#basvuru"
                 className="bg-surface-container-low p-6 md:p-8 rounded-2xl flex gap-5 md:gap-6 border border-outline-variant/10 hover:border-outline-variant/30 transition-colors flex-1"
               >
                 <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden shrink-0">
@@ -77,7 +82,7 @@ export default function SuccessStories() {
                   <p className={`text-sm font-medium mb-3 ${story.roleClass}`}>{story.role}</p>
                   <p className="text-on-surface-variant text-sm leading-relaxed">{story.quote}</p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
