@@ -1,3 +1,5 @@
+import ApplyButton from './ApplyButton'
+
 export default function HeroSection() {
   return (
     <section className="relative pt-36 pb-20 px-6 md:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16 min-h-screen">
@@ -23,13 +25,10 @@ export default function HeroSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-          <a
-            href="#basvuru"
-            className="bg-gradient-to-br from-primary to-primary-dim text-on-primary font-bold px-8 py-4 rounded-full hover:scale-95 transition-transform duration-300 glow-hover text-base tracking-tight flex items-center justify-center gap-2"
-          >
+          <ApplyButton className="bg-gradient-to-br from-primary to-primary-dim text-on-primary font-bold px-8 py-4 rounded-full hover:scale-95 transition-transform duration-300 glow-hover text-base tracking-tight flex items-center justify-center gap-2">
             Başvurunu Yap
             <span className="material-symbols-outlined icon-filled text-[20px]">arrow_forward</span>
-          </a>
+          </ApplyButton>
           <a
             href="#bootcamps"
             className="px-8 py-4 rounded-full border border-outline-variant/15 text-on-surface font-semibold hover:bg-surface-container-high transition-colors duration-300 flex items-center justify-center gap-2"

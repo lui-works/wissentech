@@ -5,10 +5,12 @@ import BootcampGrid from '@/components/BootcampGrid'
 import SuccessStories from '@/components/SuccessStories'
 import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
+import ApplyModal from '@/components/ApplyModal'
 
 export default function Home() {
   return (
     <>
+      <ApplyModal />
       <Navbar />
       <main>
         <section id="hero">

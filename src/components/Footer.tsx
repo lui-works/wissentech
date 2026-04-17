@@ -1,14 +1,14 @@
+import ApplyButton from './ApplyButton'
+
 const links: Record<string, { label: string; href: string }[]> = {
   Platform: [
     { label: 'Bootcamps', href: '#bootcamps' },
     { label: 'Kariyer Yolu', href: '#basvuru' },
     { label: 'Başarı Hikayeleri', href: '#basari-hikayeleri' },
-    { label: 'Demo Talep Et', href: '#basvuru' },
   ],
   Şirket: [
     { label: 'Hakkımızda', href: '#hero' },
     { label: 'Eğitmenler', href: '#basari-hikayeleri' },
-    { label: 'Kurumsal', href: '#basvuru' },
     { label: 'Blog', href: '#' },
   ],
   Hukuki: [
@@ -35,13 +35,10 @@ export default function Footer() {
             <p className="text-on-surface-variant text-sm leading-relaxed max-w-[200px]">
               Kariyer dönüşümü odaklı yazılım ve teknoloji eğitim platformu.
             </p>
-            <a
-              href="#basvuru"
-              className="inline-flex items-center gap-2 mt-6 bg-gradient-to-br from-primary to-primary-dim text-on-primary font-bold px-5 py-2.5 rounded-full text-sm glow-hover hover:scale-95 transition-transform duration-300"
-            >
+            <ApplyButton className="inline-flex items-center gap-2 mt-6 bg-gradient-to-br from-primary to-primary-dim text-on-primary font-bold px-5 py-2.5 rounded-full text-sm glow-hover hover:scale-95 transition-transform duration-300">
               Başvur
               <span className="material-symbols-outlined icon-filled text-[16px]">arrow_forward</span>
-            </a>
+            </ApplyButton>
           </div>
 
           {Object.entries(links).map(([category, items]) => (

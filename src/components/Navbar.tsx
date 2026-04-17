@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import ApplyButton from './ApplyButton'
 
 const navLinks = [
   { label: 'Bootcamps', href: '#bootcamps' },
@@ -31,12 +32,9 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <a
-            href="#basvuru"
-            className="bg-gradient-to-br from-primary to-primary-dim text-on-primary font-bold px-6 py-2.5 rounded-full hover:scale-95 transition-transform duration-300 glow-hover text-sm tracking-tight hidden sm:block"
-          >
+          <ApplyButton className="bg-gradient-to-br from-primary to-primary-dim text-on-primary font-bold px-6 py-2.5 rounded-full hover:scale-95 transition-transform duration-300 glow-hover text-sm tracking-tight hidden sm:block">
             Başvur
-          </a>
+          </ApplyButton>
           <button
             className="md:hidden text-on-surface-variant hover:text-white transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -59,13 +57,9 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#basvuru"
-            className="mt-2 bg-gradient-to-br from-primary to-primary-dim text-on-primary font-bold px-6 py-3 rounded-full text-sm tracking-tight text-center"
-            onClick={() => setMenuOpen(false)}
-          >
+          <ApplyButton className="mt-2 bg-gradient-to-br from-primary to-primary-dim text-on-primary font-bold px-6 py-3 rounded-full text-sm tracking-tight w-full">
             Başvur
-          </a>
+          </ApplyButton>
         </div>
       )}
     </nav>
