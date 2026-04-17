@@ -1,3 +1,5 @@
+import ApplyButton from './ApplyButton'
+
 const secondary = [
   {
     name: 'Caner Demir',
@@ -22,21 +24,15 @@ export default function SuccessStories() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16 gap-6">
           <div>
             <p className="text-xs font-medium text-primary tracking-widest uppercase mb-4">Başarı Hikayeleri</p>
-            <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-4 text-white">
-              Gerçek Sonuçlar
-            </h2>
+            <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-4 text-white">Gerçek Sonuçlar</h2>
             <p className="text-on-surface-variant text-lg max-w-xl">
-              Mezunlarımız edindikleri yetkinliklerle sektörün öncü teknoloji şirketlerinde
-              kariyerlerini yeniden şekillendiriyor.
+              Mezunlarımız edindikleri yetkinliklerle sektörün öncü teknoloji şirketlerinde kariyerlerini yeniden şekillendiriyor.
             </p>
           </div>
-          <a
-            href="#basvuru"
-            className="shrink-0 px-6 py-3 rounded-full border border-outline-variant/15 text-white font-medium hover:bg-surface-container transition-colors flex items-center gap-2 text-sm"
-          >
+          <ApplyButton className="shrink-0 px-6 py-3 rounded-full border border-outline-variant/15 text-white font-medium hover:bg-surface-container transition-colors flex items-center gap-2 text-sm">
             Sen de Katıl
             <span className="material-symbols-outlined text-[18px]">arrow_right_alt</span>
-          </a>
+          </ApplyButton>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
@@ -48,41 +44,26 @@ export default function SuccessStories() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent" />
             <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-10 z-10">
-              <a
-                href="#basvuru"
-                className="w-14 h-14 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20 mb-6 cursor-pointer hover:bg-primary/20 transition-colors"
-              >
-                <span className="material-symbols-outlined icon-filled text-white text-[28px]">play_arrow</span>
-              </a>
               <h3 className="text-2xl font-headline font-bold text-white mb-1">Ayşe Yılmaz</h3>
               <p className="text-primary font-medium mb-3 text-sm">Senior Frontend Developer @ TechCorp</p>
               <p className="text-on-surface-variant/90 max-w-md text-sm leading-relaxed line-clamp-2">
-                "Akademi'deki yoğun tempo, gerçek dünya projelerine olan yaklaşımımı tamamen değiştirdi.
-                6 ayda portföyümü oluşturup iş teklifimi aldım."
+                "Akademi'deki yoğun tempo, gerçek dünya projelerine olan yaklaşımımı tamamen değiştirdi."
               </p>
             </div>
           </div>
 
           <div className="flex flex-col gap-6 md:gap-8">
             {secondary.map((story) => (
-              <a
-                key={story.name}
-                href="#basvuru"
-                className="bg-surface-container-low p-6 md:p-8 rounded-2xl flex gap-5 md:gap-6 border border-outline-variant/10 hover:border-outline-variant/30 transition-colors flex-1"
-              >
+              <div key={story.name} className="bg-surface-container-low p-6 md:p-8 rounded-2xl flex gap-5 md:gap-6 border border-outline-variant/10 hover:border-outline-variant/30 transition-colors flex-1">
                 <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden shrink-0">
-                  <img
-                    src={story.src}
-                    alt={story.name}
-                    className="w-full h-full object-cover grayscale opacity-80"
-                  />
+                  <img src={story.src} alt={story.name} className="w-full h-full object-cover grayscale opacity-80" />
                 </div>
                 <div className="flex flex-col justify-center">
                   <h4 className="text-xl font-headline font-bold text-white mb-1">{story.name}</h4>
                   <p className={`text-sm font-medium mb-3 ${story.roleClass}`}>{story.role}</p>
                   <p className="text-on-surface-variant text-sm leading-relaxed">{story.quote}</p>
                 </div>
-              </a>
+              </div>
             ))}
           </div>
         </div>
