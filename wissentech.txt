@@ -1,0 +1,118 @@
+1. 📌 BEN NE İŞ YAPIYORUM?
+
+Ben, bireylere ve kurumlara yönelik yazılım ve teknoloji eğitimleri sunan bir eğitim platformu işletiyorum.
+
+Amacım sadece eğitim satmak değil,
+👉 insanları sıfırdan alıp yazılım sektöründe iş bulabilecek seviyeye getirmek.
+
+2. 🎯 VERDİĞİM EĞİTİMLER
+
+Eğitimlerim şu alanları kapsıyor:
+
+Full Stack Developer
+Frontend Developer
+Backend / .NET / Java / Python
+Yapay Zeka (AI)
+Veri tabanı (SQL)
+Temel yazılım eğitimi (başlangıç seviyesi)
+Çocuklar için kodlama (opsiyonel)
+Kurumsal eğitimler (şirketlere özel)
+
+Tüm eğitimler:
+
+👉 Proje bazlı
+👉 Uygulamalı
+👉 Gerçek dünya senaryoları içerir
+
+3. 🧠 BENİM FARKIM (ÇOK ÖNEMLİ)
+
+Ben klasik eğitim platformu değilim.
+
+Benim sistemim:
+
+Sadece video izletmez
+Öğrenciyi aktif üretime zorlar
+Proje yaptırır
+Portföy oluşturur
+İşe hazırlık sağlar
+
+👉 Yani ürünüm: Eğitim değil, kariyer dönüşümü
+
+4. 🎯 HEDEF KİTLEM
+
+3 ana hedef kitlem var:
+
+1. Sıfırdan başlayanlar
+
+Hiç yazılım bilmeyen ama öğrenmek isteyen
+
+2. Kariyer değiştirmek isteyenler
+
+Başka meslekten yazılıma geçmek isteyen
+
+3. Şirketler
+
+Çalışanlarını geliştirmek isteyen kurumlar
+
+5. 💼 SUNDUĞUM DEĞER
+
+Kullanıcıya verdiğim sonuç:
+
+Yazılım öğrenir
+Gerçek projeler yapar
+Portföy oluşturur
+İş başvurusu yapabilecek seviyeye gelir
+6. 🚀 SİTEDEN BEKLENTİM
+
+Oluşturulacak web sitesi:
+
+❗ Eğitim platformu gibi görünmemeli
+❗ Udemy gibi olmamalı
+
+👉 Kariyer odaklı dönüşüm platformu gibi görünmeli
+
+7. 🔥 TASARIMDA VURGULANMASI GEREKENLER
+
+AI şunları özellikle vurgulamalı:
+
+1. Sonuç Odaklılık
+
+“Eğitim al” değil → “İşe gir”
+
+2. Güven
+18+ yıl deneyim
+3000+ mezun
+uzman eğitmenler
+3. Gerçekçilik
+proje örnekleri
+öğrenci çıktıları
+4. Dönüşüm (Conversion)
+demo talebi
+iletişim
+kayıt
+8. ⚡ SİTE STRATEJİSİ
+
+Site şu akışta çalışmalı:
+
+Kullanıcı girer
+İlgi çeker (hero)
+Güven kazanır
+Eğitimleri inceler
+Demo talep eder
+9. 🎨 TASARIM STİLİ
+Modern (SaaS tarzı)
+Minimal
+Teknoloji odaklı
+Koyu tonlar (lacivert / mavi)
+Büyük başlıklar
+Kart yapıları
+10. ❗ YAPILMAMASI GEREKENLER
+
+AI kesinlikle şunları yapmamalı:
+
+Sadece kurs listeleyen site yapmamalı
+Uzun, sıkıcı metinler yazmamalı
+Eğitimleri “ürün” gibi göstermemeli
+
+👉 Bunun yerine:
+kullanıcı dönüşümüne odaklanmalı
